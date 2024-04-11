@@ -1,0 +1,15 @@
+package com.javafeature.java8;
+
+import java.util.stream.Stream;
+
+public class StreamObject {
+    public static void main(String[] args) {
+
+        Stream<Object> emptyStream = Stream.empty();
+
+        String names[] = {"Jaykant","Uday","Majanu","Raju","Shyam"};
+        Stream.of(names).filter(s -> s.contains("j")).forEach(s -> System.out.println(s));
+
+
+    }
+}
